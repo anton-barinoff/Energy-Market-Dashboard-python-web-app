@@ -62,7 +62,8 @@ Before running the application, configure the API URL in frontend/app.py:
 # For local development:
 # API_URL = "http://localhost:8000"
 # For deployment (Render):
-API_URL = "https://your-app.onrender.com"```
+API_URL = "https://your-app.onrender.com"
+```
 
 Local development: uncomment the first line, comment the second
 
