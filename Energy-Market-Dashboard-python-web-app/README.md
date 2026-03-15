@@ -41,6 +41,7 @@ This project demonstrates a full-stack web application for visualizing and manag
   - Requests (API communication)
 
 ## API Endpoints
+
 Method	               Endpoint Description	  Status Codes
 GET	/records	       Get all records	      200 OK, 500 Error
 POST /records	       Add new record	      201 Created, 500 Error
@@ -74,29 +75,38 @@ Deployment: make sure to replace your-app.onrender.com with your actual Render b
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd task_04_service```
+cd task_04_service
+```
 
 2. Create and activate virtual environment:
-```python -m venv venv
+```bash
+python -m venv venv
 # Windows:
 venv\Scripts\activate
 # Mac/Linux:
-source venv/bin/activate```
+source venv/bin/activate
+```
 
 3. Install dependencies:
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 4. Start Backend Server
-```cd backend
-uvicorn main:app --reload --port 8000```
+```
+cd backend
+uvicorn main:app --reload --port 8000
+```
 
 Backend API will be available at: http://localhost:8000
 Swagger documentation: http://localhost:8000/docs
 
 5. Start Frontend Application (new terminal)
-```# From project root with activated venv
+```bash
+# From project root with activated venv
 cd frontend
-streamlit run app.py```
+streamlit run app.py
+```
 
 Frontend dashboard will open at: http://localhost:8501
 
@@ -129,9 +139,11 @@ Frontend dashboard will open at: http://localhost:8501
 ```API_URL = "https://your-api.onrender.com"  # Replace with your actual backend URL```
 
 2. Push changes to GitHub:
-```git add frontend/app.py
+```bash
+git add frontend/app.py
 git commit -m "Update API URL for production"
-git push```
+git push
+```
 
 3. Go to share.streamlit.io
 
